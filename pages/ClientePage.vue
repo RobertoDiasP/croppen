@@ -107,7 +107,7 @@
                 @click="salvarDados(id)"
                 class="btn btn-success"
               >
-                salvar
+                salvars
               </button>
             </div>
           </template>
