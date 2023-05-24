@@ -151,7 +151,7 @@ export default {
   components: {},
   name: 'OrdemPage',
 
-  // middleware :"auth2",
+  middleware :"auth2",
 
   data() {
     return {

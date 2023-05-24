@@ -122,7 +122,7 @@
     components: {},
     name: 'ClientePage',
   
-    // middleware :"auth2",
+    middleware :"auth2",
   
     data() {
       return {

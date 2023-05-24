@@ -111,7 +111,7 @@ export default {
   components: {},
   name: 'AmostrasComp',
 
-  // middleware :"auth2",
+  middleware :"auth2",
 
   data() {
     return {
