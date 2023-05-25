@@ -20,6 +20,8 @@ import VitrineComponent from '../components/Vitrine/VitrineComponent.vue'
 export default {
   components: { Sidebar, VitrineComponent },
   name: 'IndexPage',
+  middleware :"auth2",
+
 }
 </script>
 
