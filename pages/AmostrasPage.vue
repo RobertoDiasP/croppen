@@ -1,14 +1,48 @@
 <template>
   <div class="row border justify-content-center">
-    <div class="card col-6 col-md-12">
+    <div class="card col-md-12">
       <br />
       <div class="row justify-content-center">
-        <div class="card col-6 col-md-8">
-          <SearchPesquisaComp
-            :component-title="`Pesquisar Amostras`"
-            :search-fields="searchFields"
-            get-action="Car/getCars"
-          />
+        <div class="col-8 d-flex card ">
+          <h1 style="font-size: 2rem;">Amostras</h1>
+          <div class="row d-flex p-3">
+            <div class=" col-4 p-1 ">
+                <div class="d-flex">
+                  <input type="text" class="form-control" placeholder="Buscar por Amostras">
+                 
+                </div>
+            </div> 
+            <div class=" col-4 p-1 ">
+                <div class="d-flex">
+                  <input type="text" class="form-control" placeholder="Buscar por Ordem">
+                 
+                </div>
+            </div> 
+            <div class=" col-4 p-1 ">
+                <div class="d-flex">
+                  <input type="text" class="form-control" placeholder="Buscar por Lote">
+                 
+                </div>
+            </div>  
+            <div class=" col-4 p-1 pt-3">
+                <div class="form-group">
+                  <label >Inicio</label>
+                  <input type="date" class="form-control" placeholder="Buscar Amostras">
+                 
+                </div>
+            </div> 
+            <div class=" col-4 p-1 pt-3">
+                <div class="form-group">
+                  <label >Fim</label>
+                  <input type="date" class="form-control" placeholder="Buscar Amostras">
+                </div>
+            </div> 
+            <div class=" col-12 p-1">
+                <div>
+                  <button class="btn btn-primary">Pesquisar</button>
+                </div>
+            </div> 
+          </div>
         </div>
       </div>
       <br />
@@ -39,6 +73,9 @@
                   >
                     Editar
                   </button>
+                </template>
+                <template #cell(data)="row">
+                  {{ new Date(row.value).toLocaleDateString('pt-BR') }}
                 </template>
               </b-table>
             </div>
@@ -110,7 +147,7 @@
 export default {
   components: {},
   name: 'AmostrasComp',
-
+  layout:'default',
   middleware :"auth2",
 
   data() {
@@ -126,7 +163,7 @@ export default {
       dataPesquisa: [],
       pagination: 0,
       totalRegistros: 0,
-      fields: ['id', 'externo', 'data', 'cultura', 'status', 'lote', 'Ordem', 'editar'],
+      fields: ['id', 'externo', 'data', 'cultura', 'status', 'lote', 'idOrdem', 'editar'],
     }
   },
 

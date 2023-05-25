@@ -1,16 +1,14 @@
 <template>
     <div class="card text-center">
         <div class="card-footer">
-            Featured
+            Croppen
         </div>
         <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Cropppen Consultoria Agrícola LTDA - 2022 </h5>
+            <p class="card-text">CNPJ: 48.112.173/0001-28</p>
+            <a href="https://www.croppen.com.br/" class="btn btn-primary">Ir para croppen.com.br</a>
         </div>
-        <div class="card-footer text-muted">
-            2 days ago
-        </div>
+     
     </div>
 
 </template>

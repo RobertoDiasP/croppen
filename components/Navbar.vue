@@ -8,23 +8,23 @@
   
 
       <b-collapse id="nav-collapse2" is-nav>
-        <b-navbar-nav class="ml-auto">
+        <b-navbar-nav class="ml-5">
           <!-- <div class="collapse navbar-collapse" id="collapsibleNavId"> -->
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item ">
-                <a class="nav-link" href="/AmostrasPage">Amostras </a>
+                <a class="nav-link nav-link-bar" href="/AmostrasPage">Amostras </a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/ClientePage">Clientes</a>
+                <a class="nav-link nav-link-bar" href="/ClientePage">Clientes</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/OrdemPage">Ordem de Serviço</a>
+                <a class="nav-link nav-link-bar" href="/OrdemPage">Ordem de Serviço</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/FinanPage">Orçamentos</a>
+                <a class="nav-link nav-link-bar" href="/FinanPage">Orçamentos</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/FinanPage">Relatórios</a>
+                <a class="nav-link nav-link-bar" href="/FinanPage">Relatórios</a>
               </li>
             </ul>
           <!-- </div> -->
@@ -83,8 +83,17 @@
 
 <style>
   .nav-bar{
-    background-color: #2897f4 !important;
+    background-color: #D5D1B2 !important;
     
+  }
+  .nav-link-bar{
+    color:black !important;
+    font-weight:400;
+    font-size: 1.2rem;
+  }
+
+  .nav-link-bar:hover{
+    color: white !important;
   }
 
 

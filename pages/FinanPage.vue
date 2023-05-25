@@ -9,6 +9,7 @@
 
 export default { 
     name: 'FinanPage',
+    layout: 'relatorio',
 
     data() {
         return{

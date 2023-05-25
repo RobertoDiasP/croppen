@@ -3,14 +3,55 @@
     <div class="card col-6 col-md-12">
       <br />
       <div class="row justify-content-center">
-        <div class="card col-8 p-5">
-          <div class="d-flex">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Buscar Ordens"
-            />
-            <button class="btn btn-primary">Pesquisar</button>
+        <div class="col-8 d-flex card ">
+          <h1 style="font-size: 2rem;">Ordem de Serviço</h1>
+          <div class="row d-flex p-3">
+            <div class=" col-4 p-1  pt-3">
+                <div class="form-group">
+                  <label >Ordem</label>
+                  <input type="text" class="form-control" placeholder="Buscar por Ordem">
+                 
+                </div>
+            </div> 
+            <div class=" col-4 p-1  pt-3">
+                <div class="form-group">
+                  <label >Tipo</label>
+                  <input type="text" class="form-control" placeholder="Buscar por Tipo">
+                 
+                </div>
+            </div> 
+            <div class=" col-4 p-1  pt-3">
+                <div class="form-group">
+                  <label >Status</label>
+                  <input type="text" class="form-control" placeholder="Buscar por Status">
+                 
+                </div>
+            </div>  
+            <div class=" col-4 p-1 pt-3">
+                <div class="form-group">
+                <label >Cliente</label>
+                  <input type="text" class="form-control" placeholder="Buscar por Cliente">
+                 
+                </div>
+            </div>  
+            <div class=" col-4 p-1 pt-3">
+                <div class="form-group">
+                  <label >Inicio</label>
+                  <input type="date" class="form-control" placeholder="Buscar Amostras">
+                 
+                </div>
+            </div> 
+            <div class=" col-4 p-1 pt-3">
+                <div class="form-group">
+                  <label >Fim</label>
+                  <input type="date" class="form-control" placeholder="Buscar Amostras">
+                </div>
+            </div> 
+            <div class=" col-12 p-1">
+                <div>
+                  <button class="btn btn-primary">Pesquisar</button>
+                </div>
+            </div> 
           </div>
         </div>
       </div>

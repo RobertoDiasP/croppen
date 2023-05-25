@@ -1,34 +1,34 @@
 <template>
   <section class="section">
     <div class="container">
-      <div class="columns">
-        <div class="column is-4 is-offset-4">
-          <h2 class="title has-text-centered">Welcome back!</h2>
-          <Notification :message="error" v-if="error" />
-          <div >
-            <div class="field">
-              <label class="label">Email</label>
-              <div class="control">
-                <input type="email" class="input" name="email" v-model="email" />
+      <div class="row justify-content-center">
+
+        <div class="col-8">
+          <div class="card p-5">
+            <h2 class="title has-text-centered">Faça seu Login</h2>
+            <Notification :message="error" v-if="error" />
+            <div >
+              <div class="field mt-3">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input type="email" class="form-control" name="email" v-model="email" />
+                </div>
+              </div>
+              <div class="field mt-3">
+                <label class="label">Password</label>
+                <div class="control">
+                  <input type="password" class="form-control" name="password" v-model="password" />
+                </div>
+              </div>
+              <div class="control mt-3">
+                <button @click="fazerLogin()" class="btn btn-primary">Log In</button>
               </div>
             </div>
-            <div class="field">
-              <label class="label">Password</label>
-              <div class="control">
-                <input type="password" class="input" name="password" v-model="password" />
-              </div>
-            </div>
-            <div class="control">
-              <button @click="fazerLogin()" class="button is-dark is-fullwidth">Log In</button>
-            </div>
-          </div>
-          <div class="has-text-centered" style="margin-top: 20px">
-            <p>
-              Don't have an account? <nuxt-link to="/register">Register</nuxt-link>
-            </p>
+            
           </div>
         </div>
       </div>
+
     </div>
   </section>
 </template>

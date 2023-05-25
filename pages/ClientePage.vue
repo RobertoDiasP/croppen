@@ -3,11 +3,27 @@
       <div class="card col-6 col-md-12">
         <br />
         <div class="row justify-content-center ">
-          <div class="card col-8 p-5 ">
-              <div class="d-flex">
-                <input type="text" class="form-control" placeholder="Buscar Clientes">
-               <button class="btn btn-primary"> Pesquisar</button>
-           </div>
+          <div class="col-8 d-flex card ">
+            <h1 style="font-size: 2rem;">Clientes</h1>
+          <div class="row d-flex p-3">
+            <div class=" col-4 p-1 ">
+                <div class="d-flex">
+                  <input type="text" class="form-control" placeholder="Buscar por Razao">
+                 
+                </div>
+            </div> 
+            <div class=" col-4 p-1 ">
+                <div class="d-flex">
+                  <input type="text" class="form-control" placeholder="Buscar por CNPJ">
+                 
+                </div>
+            </div> 
+            <div class=" col-4 p-1">
+                <div>
+                  <button class="btn btn-primary">Pesquisar</button>
+                </div>
+            </div> 
+          </div>
         </div>
         </div>
         <br />
