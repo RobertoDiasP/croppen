@@ -80,7 +80,7 @@
                 <input class="form-control" v-model="razao" type="text" />
               </div>
               <div class="form-group">
-                <label>CNPJ</label>
+                <label>CNPJ/CPF</label>
                 <input class="form-control" v-model="cnpj" type="text" />
               </div>
               <div class="form-group">
@@ -100,7 +100,7 @@
                 <input class="form-control" v-model="CEP" type="text" />
               </div>
               <div class="form-group">
-                <label>Rua</label>
+                <label>Endereço</label>
                 <input class="form-control" v-model="rua" type="text" />
               </div>
               <div class="form-group">
@@ -108,7 +108,11 @@
                 <input class="form-control" v-model="telefone" type="text" />
               </div>
               <div class="form-group">
-                <label>Descrição</label>
+                <label>Email</label>
+                <input class="form-control" v-model="email" type="text" />
+              </div>
+              <div class="form-group">
+                <label>Obs</label>
                 <input class="form-control" v-model="desc" type="text" />
               </div>
             </form>
@@ -152,11 +156,12 @@
         bairro:'',
         estado:'',
         CEP:'',
+        email:'',
         desc:'',
         dataPesquisa: [],
         pagination: 0,
         totalRegistros: 0,
-        fields: ['id', 'razao', 'cnpj', 'cidade', 'telefone', 'editar'],
+        fields: ['id', 'razao', 'cnpj', 'cidade', 'telefone', 'email', 'editar'],
       }
     },
   
@@ -189,7 +194,9 @@
             bairro: this.bairro,
             estado: this.estado,
             CEP: this.CEP,
-            desc: this.desc
+            desc: this.desc,
+            email: this.email
+
           }
           await this.$parse.Cloud.run('alter-Cliente', payload).then((result) => {
             this.$refs.meueditCliente.hide()

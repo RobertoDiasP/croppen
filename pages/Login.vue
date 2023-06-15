@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center mt-5">
 
         <div class="col-8">
           <div class="card p-5">
